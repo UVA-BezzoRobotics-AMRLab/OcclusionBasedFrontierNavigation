@@ -1,0 +1,8 @@
+<launch>
+	<arg name="scan_topic" default="/scan"/>
+	<node name="occlusion_detector" pkg="jackal_nodes" type="occlusions.py" output="screen">
+		<rosparam file="$(find jackal_nodes)/params/config.yaml" command="load"/>
+
+		<remap from="scan" to="$(arg scan_topic)"/>
+	</node>
+</launch>

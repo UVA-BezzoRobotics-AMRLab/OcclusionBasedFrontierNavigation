@@ -1,0 +1,16 @@
+# meters
+occlusion_threshold: 1.5
+min_occlusion_size: .5
+
+# occlusion types to include
+include_frontiers: true
+include_open_space: false
+include_shadow_space: true
+include_occluded_space: true
+
+autonomous: true
+
+# If false, will use odometry data instead
+use_vicon: false
+# Using the gate requires vicon
+use_gate: false
